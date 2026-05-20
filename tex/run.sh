@@ -2,8 +2,8 @@
 
 set -e
 
-pdflatex $1
-pdf2svg $2.pdf nn/$2.svg
-xdg-open nn/$2.svg
+pdflatex -output-directory=tex $1
+pdf2svg tex/$2.pdf tex/nn/$2.svg
+xdg-open tex/nn/$2.svg
 
-rm $2.pdf
+rm tex/$2.pdf
