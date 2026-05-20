@@ -1,6 +1,6 @@
 
 <div align="center" width="100%" height="100%">
-	<img src="tex/nn/mnist.svg">
+	<img src="./tex/nn/mnist.svg">
 </div>
 
 if we were to consider the activation of the $k_{th}$ neuron in the layer $l$ as illustrated:
