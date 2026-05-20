@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "77ed14de1cacf54a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef24851f0959673c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2d099f2a3485247",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3e2f8f45d3d9a3d8",
+    "type": "split",
+    "children": [
+      {
+        "id": "6015da1633aabe5a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6ede7a037e8465ba",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c7e0ce3432b51f04",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e12d88e1b205318b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "00f6cf44a10ded8a",
+    "type": "split",
+    "children": [
+      {
+        "id": "00e9136db9c352e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d52f80526f02e017",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Artificial Neural Networks/MNIST.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for MNIST"
+            }
+          },
+          {
+            "id": "40ef8b6eb5cb058f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "PDFs/DL/Chap_4_Cous_DL _Gaceb_C.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Chap_4_Cous_DL _Gaceb_C"
+            }
+          },
+          {
+            "id": "fb5cd3031f6dc9a1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b81b23836056f276",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "32669676b9f751e1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "PDFs/DL/Chap_4_Cous_DL _Gaceb_C.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Chap_4_Cous_DL _Gaceb_C"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "f2d099f2a3485247",
+  "lastOpenFiles": [
+    "Artificial Neural Networks/MNIST.md",
+    "Artificial Neural Networks/Scratch.md",
+    "Artificial Neural Networks/Activation Functions.md",
+    "tex/nn/mnist.svg",
+    "tex/nn/src/cross_layer.tex~",
+    "tex/cross_layer.pdf",
+    "tex/kth_neuron.pdf",
+    "tex/nn/src/kth_neuron.tex~",
+    "tex/nn/src/4913",
+    "Artificial Neural Networks",
+    "tex/nn/cross_layer.svg",
+    "tex/cross_layer.aux",
+    "tex/cross_layer.log",
+    "tex/nn/src/cross_layer.tex",
+    "2026-05-15.md",
+    "Untitled.base",
+    "Untitled.canvas",
+    "tex/nn/test.svg",
+    "tex/nn/kth_neuron.svg",
+    "tex/mnist.svg",
+    "tex/kth_neuron.svg",
+    "Deep Learning/CNNs.md",
+    "Deep Learning/U-Net.md",
+    "Deep Learning/DL Applications.md",
+    "images/unet_diagram.png",
+    "images/unet_architecture.png",
+    "Deep Learning/Transformers.md",
+    "images/unet_TL.png",
+    "images/Screenshot From 2026-05-10 15-29-14.png"
+  ]
+}
