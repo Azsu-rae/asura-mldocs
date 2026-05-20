@@ -1,5 +1,5 @@
 
-<div align="center" width="100%" height="100%">
+<div style="filter: invert(1)" align="center" width="100%" height="100%">
 	<img src="./tex/nn/mnist.svg">
 </div>
 
