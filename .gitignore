@@ -1,0 +1,9 @@
+
+*.log
+
+*.aux
+
+.*
+
+!.gitignore
+
