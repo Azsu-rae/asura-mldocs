@@ -11,10 +11,14 @@
             "id": "f2d099f2a3485247",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "MNIST.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "MNIST"
             }
           }
         ]
@@ -181,6 +185,9 @@
   },
   "active": "f2d099f2a3485247",
   "lastOpenFiles": [
+    "Activation Functions.md",
+    "MNIST.md",
+    "tex/mnist.pdf",
     "Artificial Neural Networks/MNIST.md",
     "Artificial Neural Networks/Scratch.md",
     "Artificial Neural Networks/Activation Functions.md",
@@ -196,7 +203,6 @@
     "tex/cross_layer.log",
     "tex/nn/src/cross_layer.tex",
     "2026-05-15.md",
-    "Untitled.base",
     "Untitled.canvas",
     "tex/nn/test.svg",
     "tex/nn/kth_neuron.svg",

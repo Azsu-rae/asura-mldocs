@@ -1,9 +1,13 @@
 
-<div style="filter: invert(1)" align="center" width="100%" height="100%">
+# Neural Network architecture
+
+<div align="center" width="100%" height="100%">
 	<img src="./tex/nn/mnist.svg">
 </div>
 
-if we were to consider the activation of the $k_{th}$ neuron in the layer $l$ as illustrated:
+## 1.1. Gradient Descent (last layer)
+
+if we were to consider the activation of the $k_{th}$ neuron in the last layer $l$ as illustrated:
 <div align="center" width="100%" height="100%">
 	<img src="./tex/nn/kth_neuron.svg">
 </div>
@@ -23,24 +27,43 @@ $$
 Gradient descent uses the derivative of the cost function $C$ which is defined as
 
 $$
-C = \Sigma_k\frac{1}{2}(a^{(l)}_k - y_k^{(l)})^2
+C = \frac{1}{2}\Sigma_j(a^{(l)}_j - y_j)^2
 $$
 
-where $k$ means the $k_{th}$ neuron in the output layer. $y_k^{(l)}$ is the desired output. That $\frac{1}{2}$ is there to cancel that exponent of $2$ when deriving. We take the sum of the (squared) differences because any given activation $a^{(l-1)}$ will affect all the neurons in the output layer. We don't really have any way to know where the error came from so we just sum all of them.
+where $j$ means the $j_{th}$ neuron in the output layer. $y_j$ is the corresponding desired output. That $\frac{1}{2}$ is there to cancel that exponent of $2$ when deriving. 
 
-For the sake of simplifying the computations and notations, we will omit the $k$ subscript and $(l)$s for all subsequent steps while trying leaving no room for confusion.
+We take the sum of the (squared) differences because any given activation $a^{(l-1)}$ will affect all the neurons in the output layer. We don't really have any way to know where the error came from so we just sum all of them.
 
-To apply the gradient descent algorithm, we need to take the derivative of the loss $L$ relative to the weights and bias of that loss function.  the derivative relative to a given weight $w_{k,i}$  is defined as,
+To apply the gradient descent algorithm, we need to take the derivative of the cost $C$ relative to a given weight or bias:
 
 $$
-\begin{aligned}
-\frac{\partial L}{\partial w_{k,i}}
-&=  \frac{1}{2} \frac{\partial (a^{(l)} - y)^2}{\partial w_{k,i}} \\ \\
-&= \frac{1}{2} \times 2 (a^{(l)}-y)\frac{\partial a^{(l)}}{\partial w_{k,i}}
-&\text{ (apply the chain rule)}\\ \\
-&= (a^{(l)}-y)\frac{\partial \sigma(z^{(l)}_k)}{\partial w_{k,i}}
-&\text{ (plug in $a^{(l)}$)}\\ \\
-\end{aligned}
+\frac{\partial C}{\partial w_{k,i}}
+= \frac{1}{2} \frac{\partial(\Sigma_j(a^{(l)}_j - y_j)^2)}{\partial w_{k,i}}
+$$
+
+Let's go slowly about this. Expanding that sum gives us:
+
+$$
+\frac{1}{2} \frac{\partial(\Sigma_j(a^{(l)}_j - y_j)^2)}{\partial w_{k,i}}
+= \frac{1}{2}\frac{
+		\partial((a_1^{(l)}-y_1)^2+\dots+(a_k^{(l)}-y_k)^2+\dots)
+	}{
+		\partial w_{k,i}
+	}
+$$
+
+Notice that the only activation that depends on $w_{k,i}$ is $a_k$ and any other activation would be constant relative to $w_{k,i}$ and thus derive to null. So we get:
+
+$$
+\begin{align}
+\frac{\partial C}{\partial w_{k,i}}
+&= \frac{1}{2}\frac{\partial(a_k^{(l)}-y_k)^2}{\partial w_{k,i}}
+&\text{(only the difference when $j=k$ remains)} \\ \\
+&= \frac{1}{2} \times 2 (a^{(l)}_k-y_k)\frac{\partial a^{(l)}}{\partial w_{k,i}}
+&\text{ (apply the chain rule)} \\ \\
+&= (a^{(l)}_k-y_k)\frac{\partial \sigma(z^{(l)}_k)}{\partial w_{k,i}}
+&\text{ (plug in $a^{(l)}$)} \\ \\
+\end{align}
 $$
 
 Of course we have,
@@ -57,7 +80,10 @@ $$
  }{\partial w_{k,i}}
 $$
 
-applying the chain rule, all the $w_{k,j}\ a_j$ elements where $j\neq i$  are constants and have a derivative $=0$. The only remaining element is where $j=i$ which is $w_{k,i}\ a_i^{(l-1)}$ and derives to $a_i^{(l-1)}$. Thus,
+>[!REMINDER]
+> $n$ is the number of neurons in the layer $(l-1)$ (refer back to the illustration above)
+
+applying the chain rule, all the $w_{k,j}\ a_j$ elements where $j\neq i$  are constants relative to $w_{k,i}$ and have a derivative $=0$. The only remaining element is where $j=i$ which is $w_{k,i}\ a_i^{(l-1)}$ and derives to $a_i^{(l-1)}$. Thus,
 
 $$
 \frac{\partial\sigma(z^{(l)}_k)}{\partial w_{k,i}}
@@ -67,23 +93,43 @@ $$
 note that the same procedure when considering the derivative relative to $b_k$ yields:
 
 $$
-\frac{\partial \sigma(z_k^{(l)})}{b_{k}^{(l)}}=\sigma'(z^{(k)}_k)
+\frac{\partial \sigma(z_k^{(l)})}{\partial b_{k}^{(l)}}=\sigma'(z^{(l)}_k)
 \ \ \ \ \ \ \ \ \ \
-\text{(since the derivative of $b$ is 1)}
+\text{(since $b$ has no coeffeicient, its derivative is 1)}
 $$
 
 plugging this result back in the cost function derivative we get,
 
 $$
-\frac{\partial L}{\partial w_{k,i}^{(l)}}
+\frac{\partial C}{\partial w_{k,i}^{(l)}}
 = (a_k^{(l)}-y)\,a_i^{(l-1)}\,\sigma'(z^{(l)})
 $$
 
 and for $b_k^{(l)}$,
 
 $$
-\frac{\partial L}{\partial b_k^{(l)}}
+\frac{\partial C}{\partial b_k^{(l)}}
 = (a_k^{(l)}-y)\ \sigma'(z^{(l)})
+$$
+
+note that the only element in that derivative that is specific to the $i_{th}$ weight $w_{k,i}$ is $a_i^{(l-1)}$. All of the other elements are coefficients in the derivative for any given $j_{th}$ weight in the $k_{th}$ output neuron. We generalize this formula for any weight of a $k_{th}$ output neuron by defining a **delta** as:
+
+$$
+\delta_k^{(l)}=(a_k^{(l)}-y)\sigma'(z_k^{(l)})
+$$
+and so this simplifies our final formulas to:
+
+$$
+\frac{\partial L_k}{\partial w^{(l)}_{k,i}}=a_i^{(l-1)} \delta^{(l)}_k
+$$
+
+and,
+
+$$
+\begin{align}
+&\frac{\partial L_k}{\partial b_k^{(l)}}=\delta^{(l)}_k
+&\text{}
+\end{align}
 $$
 
 the sigmoïde has an interesting property:
@@ -95,29 +141,9 @@ $$
 so using that in our formula we get,
 
 $$
-\frac{\partial L_k}{\partial w_{k,i}^{(l)}}
+\frac{\partial C}{\partial w_{k,i}^{(l)}}
 = (a_k^{(l)} - y)\ a_i^{(l-1)}\ \sigma(z_k^{(l)})(1-\sigma(z_k^{(l)}))
 $$
-
-note that the only element(?) in that derivative that is specific to the $i_{th}$ weight $w_{k,i}$ is $a_i^{(l-1)}$ so we can define an **output delta** as:
-
-$$
-\delta_k^{(l)}=(a_k^{(l)}-y)\sigma'(z_k^{(l)})
-$$
-
-Note that this corresponds to the derivative relative to $b_k^{(l)}$, and so this simplifies our final formulas to:
-
-$$
-\frac{\partial L_k}{\partial w^{(l)}_{k,i}}=a_i^{(l-1)} \delta^{(l)}_k
-$$
-
-and,
-
-$$
-\frac{\partial L_k}{\partial b_k^{(l)}}=\delta^{(l)}_k
-$$
-
-this makes clearer the relation to the $i_{th}$ weight and abstracts away the activation function $\sigma$ if we ever wish to change it or re-use this formula on another network.
 
 We define the weight and bias update mechanisms as,
 
@@ -130,7 +156,7 @@ b_k^{(l)} - \eta \frac{\partial L_k}{\partial b_k^{(l)}}
 \end{align}
 $$
 
-A more concise notation:
+where $\eta$ is the **learning rate**. A more concise notation:
 
 $$
 \begin{align}
@@ -139,7 +165,10 @@ $$
 \end{align}
 $$
 
-And that is the weight update formula of all the last layer's weights. But how about the updates across layers?
+And that is the weight update formula of all the last layer's weights and biases.
+
+
+But how about the updates across layers?
 <div align="center" width="100%" height="100%">
 	<img src="tex/nn/cross_layer.svg">
 </div>
