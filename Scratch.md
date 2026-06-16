@@ -31,7 +31,7 @@ We can therefore write the complete formula for the activation of a neuron, note
 $$ z = \sum_{i=0}^n w_i x_i + b = x_1 w_1 + x_2 w_2 + \dots + x_n w_n + b $$
 TODO: motivate the bias
 
-We usually want to chain such neurons to form neural networks networks as illustrated:
+We usually want to chain such neurons to form **neural networks** as illustrated:
 
 <div align="center" width="100%" height="100%"> <img src="tex/nn/ann.svg"> </div>
 
@@ -51,7 +51,6 @@ Let's consider a simple neural network with only 4 neurons:
 
 <div align="center" width="100%" height="100%"> <img src="tex/nn/gradient_descent_example.svg"> </div>
 
-TODO: switch to a linear regression example
-POTENTIALLY: convex, and Normal Equation closed-form solution, linearity
+TODO: switch to a linear regression example for how it demonstrates gradient descent
 
 ...
