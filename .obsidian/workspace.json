@@ -13,12 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MNIST.md",
+                "file": "Scratch.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MNIST"
+              "title": "Scratch"
+            }
+          },
+          {
+            "id": "3c3590bc008bc83f",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "tex/nn/mnist.svg"
+              },
+              "icon": "lucide-image",
+              "title": "mnist"
             }
           }
         ]
@@ -185,36 +197,37 @@
   },
   "active": "f2d099f2a3485247",
   "lastOpenFiles": [
-    "Activation Functions.md",
     "MNIST.md",
+    "Scratch.md",
+    "tex/nn/mnist.svg",
+    "images/Blausen_0657_MultipolarNeuron.png",
+    "Activation Functions.md",
+    "typst/perceptron.pdf",
+    "tex/nn/neuron.svg",
+    "tex/nn/kth_neuron.svg",
+    "tex/nn/gradient_descent_example.svg",
+    "tex/nn/ann.svg",
+    "tex/nn/cross_layer.svg",
+    "tex/nn/test.svg",
     "tex/mnist.pdf",
     "Artificial Neural Networks/MNIST.md",
     "Artificial Neural Networks/Scratch.md",
     "Artificial Neural Networks/Activation Functions.md",
-    "tex/nn/mnist.svg",
     "tex/nn/src/cross_layer.tex~",
     "tex/cross_layer.pdf",
     "tex/kth_neuron.pdf",
     "tex/nn/src/kth_neuron.tex~",
     "tex/nn/src/4913",
     "Artificial Neural Networks",
-    "tex/nn/cross_layer.svg",
     "tex/cross_layer.aux",
     "tex/cross_layer.log",
-    "tex/nn/src/cross_layer.tex",
     "2026-05-15.md",
     "Untitled.canvas",
-    "tex/nn/test.svg",
-    "tex/nn/kth_neuron.svg",
     "tex/mnist.svg",
     "tex/kth_neuron.svg",
     "Deep Learning/CNNs.md",
     "Deep Learning/U-Net.md",
     "Deep Learning/DL Applications.md",
-    "images/unet_diagram.png",
-    "images/unet_architecture.png",
-    "Deep Learning/Transformers.md",
-    "images/unet_TL.png",
-    "images/Screenshot From 2026-05-10 15-29-14.png"
+    "Deep Learning/Transformers.md"
   ]
 }

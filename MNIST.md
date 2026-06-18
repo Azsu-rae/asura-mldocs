@@ -1,4 +1,6 @@
 
+TODO: history of handwritten recognition and the MNIST, etc....
+
 # Neural Network architecture
 
 <div align="center" width="100%" height="100%">
@@ -18,7 +20,7 @@ $$
 z^{(l)}_k = \Sigma_{i=1}^{n} w_{k, i} a^{(l-1)}_i + b^{(l)}_k
 $$
 
-We'll be using the sigmoïde ($\sigma$) activation function and so,
+We'll initially be using the sigmoïde ($\sigma$) activation function for its simplicity, but we will swap it later for one better suited to our problem. And so,
 
 $$
 a^{(l)}_k = \sigma{(z^{(l)}_k)}
