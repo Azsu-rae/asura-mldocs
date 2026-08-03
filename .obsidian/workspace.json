@@ -20,18 +20,6 @@
               "icon": "lucide-file",
               "title": "MNIST"
             }
-          },
-          {
-            "id": "3c3590bc008bc83f",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "tex/nn/mnist.svg"
-              },
-              "icon": "lucide-image",
-              "title": "mnist"
-            }
           }
         ]
       }
@@ -53,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -90,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "00f6cf44a10ded8a",
@@ -196,32 +185,33 @@
       "bases:Create new base": false
     }
   },
-  "active": "f2d099f2a3485247",
+  "active": "6ede7a037e8465ba",
   "lastOpenFiles": [
-    "Scratch.md",
+    "fetch-assets.sh~",
+    "UNI_COURSES/ML/Support Vector Machine_dernier version_finale.pptx",
+    "UNI_COURSES/ML/Cours-ML.pdf",
+    "UNI_COURSES/ML",
+    "UNI_COURSES",
+    "Scratch.md~",
+    "PDFs/TAI/PW2_TAI_For students_full version_c.pdf",
+    "PDFs/TAI/Diapositive 1 - Chap_4_Cous_TAI_Gaceb_c.pdf",
+    "PDFs/TAI/Cous_TAI_Chapitre 2_Partie 1_2 et 3_C.pdf",
+    "PDFs/TAI/Chap_3_Cous_TAI_Gaceb_c.pdf",
+    "PDFs/TAI/- Getreuer_2009_Contours_Pochoirs.pdf",
     "MNIST.md",
+    "Scratch.md",
     "tex/nn/mnist.svg",
     "images/Blausen_0657_MultipolarNeuron.png",
     "Activation Functions.md",
-    "typst/perceptron.pdf",
     "tex/nn/neuron.svg",
     "tex/nn/kth_neuron.svg",
     "tex/nn/gradient_descent_example.svg",
     "tex/nn/ann.svg",
     "tex/nn/cross_layer.svg",
     "tex/nn/test.svg",
-    "tex/mnist.pdf",
     "Artificial Neural Networks/MNIST.md",
     "Artificial Neural Networks/Scratch.md",
     "Artificial Neural Networks/Activation Functions.md",
-    "tex/nn/src/cross_layer.tex~",
-    "tex/cross_layer.pdf",
-    "tex/kth_neuron.pdf",
-    "tex/nn/src/kth_neuron.tex~",
-    "tex/nn/src/4913",
-    "Artificial Neural Networks",
-    "tex/cross_layer.aux",
-    "tex/cross_layer.log",
     "2026-05-15.md",
     "Untitled.canvas",
     "tex/mnist.svg",
