@@ -31,6 +31,7 @@
               },
               "icon": "lucide-file",
               "title": "MNIST"
+<<<<<<< HEAD
             }
           },
           {
@@ -43,6 +44,8 @@
               },
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-10-01 18.11.31.excalidraw"
+=======
+>>>>>>> 6e3a3cef73883dcec3a362073278fffb06359cac
             }
           }
         ]
@@ -210,9 +213,25 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
+<<<<<<< HEAD
   "active": "a3de54e1fe995071",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-10-01 18.11.31.excalidraw.md",
+=======
+  "active": "6ede7a037e8465ba",
+  "lastOpenFiles": [
+    "fetch-assets.sh~",
+    "UNI_COURSES/ML/Support Vector Machine_dernier version_finale.pptx",
+    "UNI_COURSES/ML/Cours-ML.pdf",
+    "UNI_COURSES/ML",
+    "UNI_COURSES",
+    "Scratch.md~",
+    "PDFs/TAI/PW2_TAI_For students_full version_c.pdf",
+    "PDFs/TAI/Diapositive 1 - Chap_4_Cous_TAI_Gaceb_c.pdf",
+    "PDFs/TAI/Cous_TAI_Chapitre 2_Partie 1_2 et 3_C.pdf",
+    "PDFs/TAI/Chap_3_Cous_TAI_Gaceb_c.pdf",
+    "PDFs/TAI/- Getreuer_2009_Contours_Pochoirs.pdf",
+>>>>>>> 6e3a3cef73883dcec3a362073278fffb06359cac
     "MNIST.md",
     "Scratch.md",
     "PDFs/DL/Chap_1_Cous_DL _Gaceb_c.pdf",
@@ -221,23 +240,24 @@
     "tex/nn/mnist.svg",
     "images/Blausen_0657_MultipolarNeuron.png",
     "Activation Functions.md",
-    "typst/perceptron.pdf",
     "tex/nn/neuron.svg",
     "tex/nn/kth_neuron.svg",
     "tex/nn/gradient_descent_example.svg",
     "tex/nn/ann.svg",
     "tex/nn/cross_layer.svg",
     "tex/nn/test.svg",
-    "tex/mnist.pdf",
     "Artificial Neural Networks/MNIST.md",
     "Artificial Neural Networks/Scratch.md",
     "Artificial Neural Networks/Activation Functions.md",
+<<<<<<< HEAD
     "tex/nn/src/cross_layer.tex~",
     "tex/cross_layer.pdf",
     "tex/kth_neuron.pdf",
     "tex/nn/src/kth_neuron.tex~",
     "tex/nn/src/4913",
     "Artificial Neural Networks",
+=======
+>>>>>>> 6e3a3cef73883dcec3a362073278fffb06359cac
     "2026-05-15.md",
     "Untitled.canvas",
     "tex/mnist.svg",
