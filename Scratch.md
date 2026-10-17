@@ -46,7 +46,7 @@ The **Perceptron** is a **supervised learning** algorithm for **binary classific
 TODO: definition and truth table learning
 TODO: XOR, linear separability, and MLPs
 # Gradient Descent
-
+[[Chap_1_Cous_DL _Gaceb_c.pdf#page=23&selection=60,11,60,52|Chap_1_Cous_DL _Gaceb_c, page 23]]
 Let's consider a simple neural network with only 4 neurons:
 
 <div align="center" width="100%" height="100%"> <img src="tex/nn/gradient_descent_example.svg"> </div>

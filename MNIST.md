@@ -8,7 +8,7 @@ TODO: history of handwritten recognition and the MNIST, etc....
 </div>
 
 ## 1.1. Gradient Descent (last layer)
-
+[[Scratch]]
 if we were to consider the activation of the $k_{th}$ neuron in the last layer $l$ as illustrated:
 <div align="center" width="100%" height="100%">
 	<img src="./tex/nn/kth_neuron.svg">
