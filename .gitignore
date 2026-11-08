@@ -6,3 +6,6 @@
 .*
 
 !.gitignore
+
+UNI_COURSES/*
+!UNI_COURSES/.gitkeep

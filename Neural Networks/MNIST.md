@@ -1,4 +1,3 @@
-
 TODO: history of handwritten recognition and the MNIST, etc....
 
 # Neural Network architecture
