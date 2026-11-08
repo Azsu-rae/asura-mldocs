@@ -7,5 +7,5 @@
 
 !.gitignore
 
-UNI_COURSES/*
-!UNI_COURSES/.gitkeep
+UNI/*
+!UNI/.gitkeep
