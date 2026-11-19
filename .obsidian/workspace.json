@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Generative AI.md",
+                "file": "Machine Learning/Neural Networks/MNIST.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Generative AI"
+              "title": "MNIST"
+            }
+          },
+          {
+            "id": "94c4ba6dc049c89a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Vision/HOG, LBP, and SURF.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HOG, LBP, and SURF"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -200,40 +214,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "6ede7a037e8465ba",
+  "active": "94c4ba6dc049c89a",
   "lastOpenFiles": [
-    "UNI",
-    "Neural Networks/Activation Functions.md",
+    "Machine Learning/Neural Networks/MNIST.md",
+    "Computer Vision/HOG, LBP, and SURF.md",
+    "Computer Vision",
+    "Deep Learning/Generative AI.md",
     "Neural Networks/Scratch.md",
+    "Machine Learning/Neural Networks/Scratch.md",
+    "Machine Learning/Neural Networks/Activation Functions.md",
+    "Machine Learning/Neural Networks",
+    "Machine Learning",
+    "assets/perceptron.typ",
+    "assets/perceptron.pdf",
+    "assets/segmentation.typ",
+    "assets/mnist.pdf",
+    "assets/mnist.typ",
+    "assets/ann.svg",
+    "assets/cross_layer.tex",
+    "assets/test.tex",
+    "assets/mnist.svg",
+    "assets/neuron.svg",
+    "assets/test.svg",
+    "assets/gradient_descent_example.svg",
+    "assets/cross_layer.svg",
+    "assets/kth_neuron.svg",
+    "assets/nn/test.svg",
+    "assets/nn/neuron.svg",
+    "assets/nn/kth_neuron.svg",
+    "Neural Networks/Activation Functions.md",
     "Neural Networks/MNIST.md",
-    "typst/mnist.pdf",
-    "Neural Networks",
-    "Generative AI.md",
     "Deep Learning/Transformers.md",
     "Deep Learning/U-Net.md",
-    "UNI_COURSES/ML/Cours-ML.pdf",
-    "typst/perceptron.pdf",
-    "fetch-assets.sh~",
-    "UNI_COURSES/ML/Support Vector Machine_dernier version_finale.pptx",
-    "UNI_COURSES/ML",
-    "UNI_COURSES",
-    "Scratch.md~",
-    "PDFs/TAI/PW2_TAI_For students_full version_c.pdf",
-    "tex/nn/mnist.svg",
-    "images/Blausen_0657_MultipolarNeuron.png",
-    "tex/nn/neuron.svg",
-    "tex/nn/kth_neuron.svg",
-    "tex/nn/gradient_descent_example.svg",
-    "tex/nn/ann.svg",
-    "tex/nn/cross_layer.svg",
-    "tex/nn/test.svg",
     "Artificial Neural Networks/MNIST.md",
     "Artificial Neural Networks/Scratch.md",
     "Artificial Neural Networks/Activation Functions.md",
     "2026-05-15.md",
     "Untitled.canvas",
-    "tex/mnist.svg",
-    "tex/kth_neuron.svg",
     "Deep Learning/CNNs.md",
     "Deep Learning/DL Applications.md"
   ]

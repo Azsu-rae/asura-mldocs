@@ -3,7 +3,7 @@ TODO: history of handwritten recognition and the MNIST, etc....
 # Neural Network architecture
 
 <div align="center" width="100%" height="100%">
-	<img src="./tex/nn/mnist.svg">
+	<img src="assets/mnist.svg">
 </div>
 
 ## 1.1. Gradient Descent (last layer)
