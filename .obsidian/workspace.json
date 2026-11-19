@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Generative AI.md",
+                "file": "Machine Learning/Neural Networks/MNIST.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,8 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,10 +213,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "94c4ba6dc049c89a",
+  "active": "3e56c47c24715218",
   "lastOpenFiles": [
-    "Machine Learning/Neural Networks/MNIST.md",
     "Computer Vision/HOG, LBP, and SURF.md",
+    "Machine Learning/Neural Networks/MNIST.md",
     "Computer Vision",
     "Deep Learning/Generative AI.md",
     "Neural Networks/Scratch.md",
