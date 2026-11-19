@@ -9,7 +9,7 @@ if [ ! -d "$HOME/Documents/I2A_S1" ]; then
     echo "      $I2A_S1"
     echo ""
 else
-    ln -sfn $HOME/Documents/I2A_S1/TAI/ ./UNI_COURSES//
+    ln -sfn $HOME/Documents/I2A_S1/TAI/ ./UNI_COURSES/
     ln -sfn $HOME/Documents/I2A_S1/ML/ ./UNI_COURSES/
 fi
 
